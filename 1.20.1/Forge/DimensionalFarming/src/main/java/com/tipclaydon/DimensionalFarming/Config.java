@@ -1,5 +1,7 @@
 package com.tipclaydon.DimensionalFarming;
 
+import com.tipclaydon.DimensionalFarming.DimensionalFarming;
+
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeConfigSpec;

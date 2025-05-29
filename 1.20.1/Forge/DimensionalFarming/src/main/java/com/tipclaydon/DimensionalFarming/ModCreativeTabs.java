@@ -1,5 +1,7 @@
 package com.tipclaydon.DimensionalFarming;
 
+import com.tipclaydon.DimensionalFarming.DimensionalFarming;
+
 import com.tipclaydon.DimensionalFarming.blocks.ModBlocks;
 import com.tipclaydon.DimensionalFarming.items.ModItems;
 
