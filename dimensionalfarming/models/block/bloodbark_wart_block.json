@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "dimensionalfarming:block/bloodbark_wart_block"
-  }
-}

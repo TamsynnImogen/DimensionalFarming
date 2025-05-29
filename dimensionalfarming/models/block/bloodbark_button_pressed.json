@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/button_pressed",
-  "textures": {
-    "texture": "dimensionalfarming:block/bloodbark_planks"
-  }
-}

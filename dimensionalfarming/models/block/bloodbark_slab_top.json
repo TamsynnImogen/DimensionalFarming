@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "dimensionalfarming:block/bloodbark_planks",
-    "top": "dimensionalfarming:block/bloodbark_planks",
-    "side": "dimensionalfarming:block/bloodbark_planks"
-  }
-}
