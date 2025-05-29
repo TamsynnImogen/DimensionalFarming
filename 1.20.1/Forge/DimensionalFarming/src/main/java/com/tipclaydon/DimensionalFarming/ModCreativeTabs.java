@@ -1,57 +1,37 @@
 package com.tipclaydon.DimensionalFarming;
 
-import com.tipclaydon.DimensionalFarming.DimensionalFarming;
-
 import com.tipclaydon.DimensionalFarming.blocks.ModBlocks;
 import com.tipclaydon.DimensionalFarming.items.ModItems;
-
-import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 public class ModCreativeTabs {
 
-    public static final DeferredRegister<CreativeModeTab> TABS =
-        DeferredRegister.create(Registries.CREATIVE_MODE_TAB, DimensionalFarming.MODID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
+            DeferredRegister.create(ForgeRegistries.CREATIVE_MODE_TAB, DimensionalFarming.MODID);
 
-    public static final RegistryObject<CreativeModeTab> NETHER_TAB = TABS.register("nether_tab", () ->
-        CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.dimensionalfarming.nether_tab"))
-            .icon(() -> new ItemStack(ModItems.NETHER_ICON.get()))
-            .displayItems((parameters, output) -> {
-                output.accept(ModItems.BLOODBARK_HYPHAE.get());
-                output.accept(ModItems.STRIPPED_BLOODBARK_HYPHAE.get());
-                output.accept(ModItems.BLOODBARK_STEM.get());
-                output.accept(ModItems.STRIPPED_BLOODBARK_STEM.get());
-                output.accept(ModItems.BLOODBARK_PLANKS.get());
-                output.accept(ModItems.BLOODBARK_SLAB.get());
-                output.accept(ModItems.BLOODBARK_STAIRS.get());
-                output.accept(ModItems.BLOODBARK_DOOR.get());
-                output.accept(ModItems.BLOODBARK_TRAPDOOR.get());
-                output.accept(ModItems.BLOODBARK_FENCE.get());
-                output.accept(ModItems.BLOODBARK_FENCE_GATE.get());
-                output.accept(ModItems.BLOODBARK_PRESSURE_PLATE.get());
-                output.accept(ModItems.BLOODBARK_BUTTON.get());
-            })
-            .build()
-    );
+    public static final RegistryObject<CreativeModeTab> DIMENSIONAL_TAB = CREATIVE_MODE_TABS.register("dimensional_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModBlocks.BLOODBARK_LOG.get()))
+                    .title(Component.translatable("itemGroup.dimensionalfarming"))
+                    .displayItems((params, output) -> {
+                        // Add blocks and items to the tab
+                        output.accept(ModBlocks.BLOODBARK_LOG.get());
+                        output.accept(ModBlocks.BLOODBARK_LEAVES.get());
+                        output.accept(ModItems.BLOODBARK_STICK.get());
 
-    public static final RegistryObject<CreativeModeTab> END_TAB = TABS.register("end_tab", () ->
-        CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.dimensionalfarming.end_tab"))
-            .icon(() -> new ItemStack(ModItems.END_ICON.get()))
-            .displayItems((parameters, output) -> {
-                output.accept(Items.CHORUS_FRUIT);
-            })
-            .build()
-    );
+                        // Add more as needed
+                    })
+                    .build());
 
-    public static void register(IEventBus bus) {
-        TABS.register(bus);
+    public static void register(IEventBus eventBus) {
+        CREATIVE_MODE_TABS.register(eventBus);
     }
 }
