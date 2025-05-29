@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "dimensionalfarming:block/bloodbark_planks",
+    "top": "dimensionalfarming:block/bloodbark_planks",
+    "side": "dimensionalfarming:block/bloodbark_planks"
+  }
+}

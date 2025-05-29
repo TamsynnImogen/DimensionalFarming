@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "dimensionalfarming:block/stripped_bloodbark_hyphae",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "dimensionalfarming:block/stripped_bloodbark_hyphae"
+    },
+    "axis=z": {
+      "model": "dimensionalfarming:block/stripped_bloodbark_hyphae",
+      "x": 90
+    }
+  }
+}

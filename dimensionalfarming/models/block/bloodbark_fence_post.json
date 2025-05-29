@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "dimensionalfarming:block/bloodbark_planks"
+  }
+}
