@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "dimensionalfarming:block/bloodbark_stem",
+    "side": "dimensionalfarming:block/bloodbark_stem"
+  }
+}
