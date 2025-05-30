@@ -11,6 +11,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class DimensionalFarming {
     public static final String MODID = "dimensionalfarming";
 
+    @SuppressWarnings("removal")
     public DimensionalFarming() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 

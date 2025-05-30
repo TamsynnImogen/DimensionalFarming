@@ -16,6 +16,7 @@ public class ClientModEvents {
     private static final Logger LOGGER = LogUtils.getLogger();
 
     @SubscribeEvent
+    @SuppressWarnings("removal")
     public static void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             // Set cutout render layer for see-through blocks
