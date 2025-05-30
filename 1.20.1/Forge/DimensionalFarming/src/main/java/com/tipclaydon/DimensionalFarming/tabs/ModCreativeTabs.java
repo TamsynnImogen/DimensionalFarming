@@ -18,22 +18,33 @@ public class ModCreativeTabs {
 
     public static final RegistryObject<CreativeModeTab> NETHER_FARMING_TAB = CREATIVE_MODE_TABS.register("nether_farming_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModBlocks.BLOODBARK_LOG.get())) // 🔥 Replace with Nether-themed block/item
+                    .icon(() -> new ItemStack(ModItems.NETHER_FARMING_ICON.get())) // 🔥 Replace with Nether-themed block/item
                     .title(Component.translatable("itemGroup.dimensionalfarming.nether"))
                     .displayItems((params, output) -> {
-                        output.accept(ModBlocks.BLOODBARK_LOG.get());
-                        output.accept(ModItems.BLOODBARK_STICK.get());
+                        output.accept(ModBlocks.BLOODBARK_STEM.get());
+                        output.accept(ModBlocks.STRIPPED_BLOODBARK_STEM.get());
+                        output.accept(ModBlocks.BLOODBARK_HYPHAE.get());
+                        output.accept(ModBlocks.STRIPPED_BLOODBARK_HYPHAE.get());
+                        output.accept(ModBlocks.BLOODBARK_PLANKS.get());
+                        output.accept(ModBlocks.BLOODBARK_SLAB.get());
+                        output.accept(ModBlocks.BLOODBARK_STAIRS.get());
+                        output.accept(ModBlocks.BLOODBARK_DOOR.get());
+                        output.accept(ModBlocks.BLOODBARK_TRAPDOOR.get());
+                        output.accept(ModBlocks.BLOODBARK_FENCE.get());
+                        output.accept(ModBlocks.BLOODBARK_FENCE_GATE.get());
+                        output.accept(ModBlocks.BLOODBARK_BUTTON.get());
+                        output.accept(ModBlocks.BLOODBARK_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.BLOODBARK_SIGN.get());
+                        output.accept(ModBlocks.BLOODBARK_HANGING_SIGN.get());
                         // Add more Nether blocks/items here
                     })
                     .build());
 
     public static final RegistryObject<CreativeModeTab> END_FARMING_TAB = CREATIVE_MODE_TABS.register("end_farming_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModBlocks.BLOODBARK_LOG.get())) // 🟣 Replace with End-themed block/item
+                    .icon(() -> new ItemStack(ModItems.END_FARMING_ICON.get())) // 🟣 Replace with End-themed block/item
                     .title(Component.translatable("itemGroup.dimensionalfarming.end"))
                     .displayItems((params, output) -> {
-                        output.accept(ModBlocks.BLOODBARK_PRESSURE_PLATE.get());
-                        output.accept(ModBlocks.BLOODBARK_BUTTON.get());
                         // Add more End blocks/items here
                     })
                     .build());

@@ -1,6 +1,6 @@
 {
-  "itemGroup.dimensionalfarming.nether_tab": "Nether Farming",
-  "itemGroup.dimensionalfarming.end_tab": "End Farming",
+  "itemGroup.dimensionalfarming.nether": "Nether Farming",
+  "itemGroup.dimensionalfarming.end": "End Farming",
   "item.dimensionalfarming.nether_farming_icon": "Nether Farming Tab Icon",
   "item.dimensionalfarming.end_farming_icon": "End Farming Tab Icon",
   "block.dimensionalfarming.bloodbark_planks": "Bloodbark Planks",

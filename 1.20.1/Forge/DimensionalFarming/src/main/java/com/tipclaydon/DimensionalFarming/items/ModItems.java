@@ -11,7 +11,10 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, DimensionalFarming.MODID);
 
-    public static final RegistryObject<Item> BLOODBARK_STICK = ITEMS.register("bloodbark_stick",
+    public static final RegistryObject<Item> END_FARMING_ICON = ITEMS.register("end_farming_icon",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> NETHER_FARMING_ICON = ITEMS.register("nether_farming_icon",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

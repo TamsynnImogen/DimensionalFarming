@@ -19,11 +19,23 @@ public class ModBlocks {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, DimensionalFarming.MODID);
 
-    public static final RegistryObject<Block> BLOODBARK_LOG = registerBlock("bloodbark_log",
-                () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> BLOODBARK_STEM = registerBlock("bloodbark_stem",
+                () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_STEM)));
             
+    public static final RegistryObject<Block> STRIPPED_BLOODBARK_STEM = registerBlock("stripped_bloodbark_stem",
+                () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_CRIMSON_STEM)));
+                            
+    public static final RegistryObject<Block> BLOODBARK_HYPHAE = registerBlock("bloodbark_hyphae",
+                () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_HYPHAE)));
+            
+    public static final RegistryObject<Block> STRIPPED_BLOODBARK_HYPHAE = registerBlock("stripped_bloodbark_hyphae",
+                () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_CRIMSON_HYPHAE)));
+                            
     public static final RegistryObject<Block> BLOODBARK_FENCE_GATE = registerBlock("bloodbark_fence_gate",
                 () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), ModWoodTypes.BLOODBARK_WOOD_TYPE));
+                            
+    public static final RegistryObject<Block> BLOODBARK_FENCE = registerBlock("bloodbark_fence",
+                () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
 
     public static final RegistryObject<Block> BLOODBARK_BUTTON = registerBlock("bloodbark_button",
                 () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), ModWoodTypes.BLOODBARK_SET_TYPE, 30, true));
@@ -42,7 +54,16 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BLOODBARK_HANGING_SIGN = BLOCKS.register("bloodbark_hanging_sign",
                 () -> new CeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.BLOODBARK_WOOD_TYPE));
-
+                           
+    public static final RegistryObject<Block> BLOODBARK_PLANKS = registerBlock("bloodbark_planks",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));                            
+                            
+    public static final RegistryObject<Block> BLOODBARK_STAIRS = registerBlock("bloodbark_stairs",
+                () -> new StairBlock(() -> ModBlocks.BLOODBARK_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.CRIMSON_STAIRS)));
+                            
+    public static final RegistryObject<Block> BLOODBARK_SLAB = registerBlock("bloodbark_slab",
+                () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_SLAB)));
+                            
     private static <T extends Block> RegistryObject<T> registerBlock(String name, java.util.function.Supplier<T> blockSupplier) {
         RegistryObject<T> block = BLOCKS.register(name, blockSupplier);
         ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
