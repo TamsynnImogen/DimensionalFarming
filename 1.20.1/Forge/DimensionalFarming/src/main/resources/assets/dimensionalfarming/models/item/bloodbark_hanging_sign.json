@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "item/generated",
   "textures": {
-    "layer0": "dimensionalfarming:block/bloodbark_hanging_sign"
+    "layer0": "dimensionalfarming:item/bloodbark_hanging_sign"
   }
 }

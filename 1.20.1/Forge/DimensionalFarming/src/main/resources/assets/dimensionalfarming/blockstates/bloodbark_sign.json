@@ -1,7 +1,22 @@
 {
   "variants": {
-    "": {
-      "model": "dimensionalfarming:block/bloodbark_sign"
+    "rotation": {
+      "0": { "model": "dimensionalfarming:block/bloodbark_sign" },
+      "1": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 22 },
+      "2": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 45 },
+      "3": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 67 },
+      "4": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 90 },
+      "5": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 112 },
+      "6": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 135 },
+      "7": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 157 },
+      "8": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 180 },
+      "9": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 202 },
+      "10": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 225 },
+      "11": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 247 },
+      "12": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 270 },
+      "13": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 292 },
+      "14": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 315 },
+      "15": { "model": "dimensionalfarming:block/bloodbark_sign", "y": 337 }
     }
   }
 }
