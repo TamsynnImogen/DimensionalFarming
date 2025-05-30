@@ -34,8 +34,8 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.BLOODBARK_FENCE_GATE.get());
                         output.accept(ModBlocks.BLOODBARK_BUTTON.get());
                         output.accept(ModBlocks.BLOODBARK_PRESSURE_PLATE.get());
-                        output.accept(ModBlocks.BLOODBARK_SIGN.get());
-                        output.accept(ModBlocks.BLOODBARK_HANGING_SIGN.get());
+                        output.accept(ModItems.BLOODBARK_SIGN_ITEM.get());
+                        output.accept(ModItems.BLOODBARK_HANGING_SIGN_ITEM.get());
                         // Add more Nether blocks/items here
                     })
                     .build());

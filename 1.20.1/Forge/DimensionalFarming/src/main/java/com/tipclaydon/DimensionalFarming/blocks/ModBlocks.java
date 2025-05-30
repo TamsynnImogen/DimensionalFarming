@@ -54,6 +54,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BLOODBARK_HANGING_SIGN = BLOCKS.register("bloodbark_hanging_sign",
                 () -> new CeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.BLOODBARK_WOOD_TYPE));
+
+    public static final RegistryObject<Block> BLOODBARK_WALL_SIGN = BLOCKS.register("bloodbark_wall_sign",
+                () -> new WallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.BLOODBARK_WOOD_TYPE));
+
+    public static final RegistryObject<Block> BLOODBARK_WALL_HANGING_SIGN = BLOCKS.register("bloodbark_wall_hanging_sign",
+                () -> new WallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.BLOODBARK_WOOD_TYPE));
                            
     public static final RegistryObject<Block> BLOODBARK_PLANKS = registerBlock("bloodbark_planks",
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));                            
