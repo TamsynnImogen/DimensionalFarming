@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north":  { "model": "dimensionalfarming:block/bloodbark_wall_sign", "y": 180 },
-    "facing=south":  { "model": "dimensionalfarming:block/bloodbark_wall_sign" },
-    "facing=west":   { "model": "dimensionalfarming:block/bloodbark_wall_sign", "y": 90 },
-    "facing=east":   { "model": "dimensionalfarming:block/bloodbark_wall_sign", "y": 270 }
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "dimensionalfarming:block/door_top_right",
-  "textures": {
-    "bottom": "dimensionalfarming:block/bloodbark_door_bottom",
-    "top": "dimensionalfarming:block/bloodbark_door_top"
-  }
-}
